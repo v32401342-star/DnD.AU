@@ -1,0 +1,233 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #292725;
+    color: #e3ded7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Верхняя панель */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 54px;
+    padding: 0 15px;
+    background: #202020;
+    border-bottom: 1px solid #45413c;
+    font-size: 28px;
+}
+
+.logo {
+    color: #f1eee9;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.topbar-divider {
+    color: #77716a;
+}
+
+/* Две колонки */
+.layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    padding: 8px 14px;
+}
+
+/* Левая навигация */
+.sidebar {
+    min-width: 0;
+    background: #292725;
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.sidebar-buttons a {
+    padding: 8px;
+    background: #35322f;
+    border: 1px solid #49443e;
+    border-radius: 4px;
+    color: #e0d9cf;
+    text-decoration: none;
+}
+
+.menu-group {
+    margin-bottom: 7px;
+    overflow: hidden;
+    background: #292725;
+    border: 1px solid #49443e;
+    border-radius: 4px;
+}
+
+.menu-group summary {
+    padding: 9px 10px;
+    background: #35322f;
+    border-bottom: 1px solid #49443e;
+    color: #eee9e2;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-group summary.green-title {
+    color: #54c8b7;
+}
+
+.menu-group a {
+    display: block;
+    padding: 4px 10px;
+    color: #ded8d0;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.menu-group a:hover,
+.sidebar-buttons a:hover {
+    color: #e9bd78;
+    background: #403b35;
+}
+
+/* Правая область */
+.content {
+    min-width: 0;
+}
+
+.content > h1 {
+    margin: 0 0 7px;
+    color: #e9e2d9;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.news {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #eae3d8;
+    color: #292725;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.news h2 {
+    margin: 0 0 14px;
+    color: #22201e;
+    font-size: 24px;
+}
+
+.news p {
+    margin: 12px 0 20px;
+}
+
+.news-date {
+    color: #71675b;
+    font-size: 14px;
+}
+
+/* Для телефонов */
+@media (max-width: 700px) {
+    .topbar {
+        height: auto;
+        min-height: 54px;
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        padding: 8px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content > h1 {
+        font-size: 24px;
+    }
+}
+
+/* Поиск и форма пользователя */
+.site-search {
+    display: flex;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.site-search input {
+    min-width: 0;
+    flex: 1;
+}
+
+.site-search input,
+.login-form > input {
+    padding: 10px;
+    font: inherit;
+    border: 1px solid #aaa096;
+    border-radius: 4px;
+    background: #eae0d2;
+    color: #292725;
+}
+
+.site-search button,
+.login-form button {
+    padding: 8px 12px;
+    font: inherit;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form {
+    padding: 8px 10px;
+}
+
+.login-form > input {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.login-form label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.login-form label input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.login-form > a {
+    margin-top: 8px;
+}

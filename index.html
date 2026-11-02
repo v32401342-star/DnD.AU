@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND AU — Онлайн-справочник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a class="logo" href="#">DND AU</a>
+        <span class="topbar-divider">|</span>
+        <span>Онлайн-справочник</span>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <details class="menu-group" open>
+                <summary>Справочники</summary>
+                <a href="#classes">♟ Классы</a>
+                <a href="#races">♙ Расы и происхождения</a>
+                <a href="#backgrounds">📜 Предыстории</a>
+                <a href="#feats">✦ Черты</a>
+                <a href="#spells">📖 Заклинания</a>
+                <a href="#bestiary">♜ Бестиарий</a>
+                <a href="#items">⚔ Магические предметы</a>
+                <a href="#equipment">🎒 Снаряжение</a>
+            </details>
+
+            <details class="menu-group" open>
+                <summary class="green-title">Новичку</summary>
+                <a href="#start">Как начать играть в D&D</a>
+                <a href="#stats">Использование характеристик</a>
+                <a href="#formulas">Основные формулы</a>
+                <a href="#faq">Часто задаваемые вопросы</a>
+            </details>
+
+            <details class="menu-group" open>
+                <summary>Статьи</summary>
+                <a href="#bestiary">Бестиарий</a>
+                <a href="#inventory">Инвентарь</a>
+                <a href="#mechanics">Игровые механики</a>
+                <a href="#news">Новости сайта</a>
+                <a href="#community">Сообщество</a>
+            </details>
+
+            <form class="site-search" onsubmit="return false;">
+                <input type="search" placeholder="Поиск по сайту">
+                <button type="submit">Найти</button>
+            </form>
+
+            <details class="menu-group" open>
+                <summary>Пользователь</summary>
+                <a href="#settings">⚙ Настройки</a>
+
+                <form class="login-form" id="login">
+                    <input type="text" placeholder="Логин *">
+                    <input type="password" placeholder="Пароль *">
+                    <label>
+                        <input type="checkbox">
+                        Запомнить
+                    </label>
+                    <button type="button">Войти</button>
+                    <a href="#register">Регистрация</a>
+                </form>
+            </details>
+
+            <details class="menu-group">
+                <summary>Мои персонажи</summary>
+                <a href="#characters">Мои листы персонажей</a>
+                <a href="#create">Создать персонажа</a>
+            </details>
+
+        </aside>
+
+        <main class="content">
+
+            <h1 id="news">Новости сайта</h1>
+
+            <article class="news">
+                <h2>Добро пожаловать в DND AU</h2>
+                <p class="news-date">Первая запись</p>
+                <p>
+                    Здесь будет собираться полезная информация для твоих
+                    приключений: правила, описания игровых элементов,
+                    статьи и инструменты.
+                </p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
